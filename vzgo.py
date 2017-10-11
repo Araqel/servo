@@ -3,6 +3,8 @@ from time import sleep
 
 pin=3
 
+GPIO.setmode(GPIO.BOARD)
+
 GPIO.setup(pin, GPIO.OUT)
 
 pwm=GPIO.PWM(pin, 50)
